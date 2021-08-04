@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .c-wrapper{
+            position: relative;
+            width: fit-content;
+            margin:  0 auto;
+        }
+        .c-wrapper h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            margin: 0;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+<h1 class="points" style="text-align: center; color: red;margin: 20px 0;">
+    СЧЁТ: <span></span>
+</h1>
+<div class="c-wrapper">
+    <h1 class="welcome-text">
+        Нажми пробел для начала игры
+    </h1>
+    <h1 class="final-score">
+        Твой счет <span></span>
+        <br>Нажми Enter чтобы начать заново
+
+    </h1>
+    <canvas id="sky" style="margin: 40px auto 40px; display: block;"></canvas>
+</div>
+
+
+<script src="snow.js"></script>
+</body>
+</html>
